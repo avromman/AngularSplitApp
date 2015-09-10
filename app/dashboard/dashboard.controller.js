@@ -22,7 +22,7 @@
         vm.bills = dataservice.bills;
         vm.users = dataservice.users;
         vm.add = true;
-        vm.selectedUser = 0;        //id of selected user
+        vm.selectedUser = 0;        //id of     selected user
         activate();
 
         function activate() {

@@ -9,8 +9,7 @@ describe('DashboardController', function() {
     });
 
     beforeEach(function () {
-        sinon.stub(dataservice, 'getPeople').returns($q.when(people));
-        controller = $controller('DashboardController');
+        controller = $controller('DashboardController',{dataservice: dataservice});
         $rootScope.$apply();
     });
 
